@@ -1,5 +1,6 @@
 import json
 import requests
+from requests.exceptions import RequestException
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
@@ -18,6 +19,8 @@ endPoint = data56
 url = f"{baseUrl}{endPoint}"
 
 headers = {"Authorization": f"Infuser {apiKey}"}
-
-response = requests.get(url, headers=headers)
-print(response.text)
+try:
+    response = requests.get(url, headers=headers)
+    print(response.text)
+except RequestsException as e:
+    print(e)
