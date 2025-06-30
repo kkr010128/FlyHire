@@ -26,17 +26,10 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def index():
-    try:
-        response = requests.get(url, headers=headers)
-        try:
-            result_json = response.json()
-            result_text = json.dumps(result_json, indent=2, ensure_ascii=False)
-        except ValueError:
-            result_text = response.text
-    except RequestException as e:
-        result_text = f"Error: {str(e)}"
-    return render_template("index.html", result=result_text)
+def table():
+    df = pd.read_csv("./data/2506.csv")
+    table_html = df.to_html(classes="table table-striped", index=False)
+    return render_template("index.html", table=table_html)
 
 
 if __name__ == "__main__":
