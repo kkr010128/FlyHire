@@ -17,6 +17,15 @@
   <body>
     <div class="container mt-4">
       <h2>사업장 데이터</h2>
+        <form method="POST">
+          <select name="employeeCount" onchange="this.form.submit()">
+            <option value="50" {% if selected == "50" %}selected{% endif %}>50명 이하</option>
+            <option value="51" {% if selected == "51" %}selected{% endif %}>51 ~ 300명</option>
+            <option value="301" {% if selected == "301" %}selected{% endif %}>301 ~ 1,000명</option>
+            <option value="1001" {% if selected == "1001" %}selected{% endif %}>1,001 ~ 10,000명</option>
+            <option value="10001" {% if selected == "10001" %}selected{% endif %}>10,001명 이상</option>
+          </select>
+        </form>
       <table id="csvTable" class="display">
         {{ table|safe }}
       </table>
