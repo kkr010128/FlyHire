@@ -27,9 +27,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def table():
-    df = pd.read_csv("./data/2506.csv")
+    df = pd.read_csv("/Users/kim-youngho/git/FlyHire/data/2506.csv")# 경로를 못찾아서 절대경로로 바꿈
     table_html = df.to_html(classes="table table-striped", index=False)
     return render_template("index.html", table=table_html)
+
+
+
 
 
 if __name__ == "__main__":
