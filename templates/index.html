@@ -17,6 +17,51 @@
   <body>
     <div class="container mt-4">
       <h2>사업장 데이터</h2>
+      <div class="conditions">
+        <div>
+
+        <form method="POST">
+          <!-- 기존 검색 조건 요소들 -->
+          <select name="employeeCount">
+            <!-- if selected... 이 코드들은 검색 버튼을 눌러도 검색 조건이 유지되도록 하기 위한 코드들임 -->
+            <!-- 없으면 검색 누를시 다 초기화 -->
+            <option value="0" {% if selected_employee == "0" %}selected{% endif %}>전체</option>
+            <option value="50" {% if selected_employee == "50" %}selected{% endif %}>50명 이하</option>
+            <option value="51" {% if selected_employee == "51" %}selected{% endif %}>51 ~ 300명</option>
+            <option value="301" {% if selected_employee == "301" %}selected{% endif %}>301 ~ 1,000명</option>
+            <option value="1001" {% if selected_employee == "1001" %}selected{% endif %}>1,001 ~ 10,000명</option>
+            <option value="10001" {% if selected_employee == "10001" %}selected{% endif %}>10,001명 이상</option>
+          </select>
+          <br>
+          <!-- 체크박스들 -->
+          <label><input type="checkbox" name="sido" value="11" {% if "11" in selected_sido %}checked{% endif %}> 서울특별시</label><br>
+          <label><input type="checkbox" name="sido" value="26" {% if "26" in selected_sido %}checked{% endif %}> 부산광역시</label><br>
+          <label><input type="checkbox" name="sido" value="27" {% if "27" in selected_sido %}checked{% endif %}> 대구광역시</label><br>
+          <label><input type="checkbox" name="sido" value="28" {% if "28" in selected_sido %}checked{% endif %}> 인천광역시</label><br>
+          <label><input type="checkbox" name="sido" value="29" {% if "29" in selected_sido %}checked{% endif %}> 광주광역시</label><br>
+          <label><input type="checkbox" name="sido" value="30" {% if "30" in selected_sido %}checked{% endif %}> 대전광역시</label><br>
+          <label><input type="checkbox" name="sido" value="31" {% if "31" in selected_sido %}checked{% endif %}> 울산광역시</label><br>
+          <label><input type="checkbox" name="sido" value="36" {% if "36" in selected_sido %}checked{% endif %}> 세종특별자치시</label><br>
+          <label><input type="checkbox" name="sido" value="41" {% if "41" in selected_sido %}checked{% endif %}> 경기도</label><br>
+          <label><input type="checkbox" name="sido" value="43" {% if "43" in selected_sido %}checked{% endif %}> 충청북도</label><br>
+          <label><input type="checkbox" name="sido" value="44" {% if "44" in selected_sido %}checked{% endif %}> 충청남도</label><br>
+          <label><input type="checkbox" name="sido" value="45" {% if "45" in selected_sido %}checked{% endif %}> 전라북도</label><br>
+          <label><input type="checkbox" name="sido" value="46" {% if "46" in selected_sido %}checked{% endif %}> 전라남도</label><br>
+          <label><input type="checkbox" name="sido" value="47" {% if "47" in selected_sido %}checked{% endif %}> 경상북도</label><br>
+          <label><input type="checkbox" name="sido" value="48" {% if "48" in selected_sido %}checked{% endif %}> 경상남도</label><br>
+          <label><input type="checkbox" name="sido" value="50" {% if "50" in selected_sido %}checked{% endif %}> 제주특별자치도</label><br>
+          <label><input type="checkbox" name="sido" value="51" {% if "51" in selected_sido %}checked{% endif %}> 강원특별자치도</label><br>
+          <label><input type="checkbox" name="sido" value="52" {% if "52" in selected_sido %}checked{% endif %}> 전북특별자치도</label><br>
+
+          <br>
+          <button type="submit">검색</button>
+          <!-- TODO: 초기화 버튼 누르면 검색 조건 다 사라지는 기능 구현(원본 데이터 보이게 하기) -->
+          <!-- <button type="reset">초기화</button> -->
+        </form>
+      </div>
+    <div> 
+          
+    </div>
       <table id="csvTable" class="display">
         {{ table|safe }}
       </table>
