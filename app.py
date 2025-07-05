@@ -27,6 +27,7 @@ headers = {"Authorization": f"Infuser {apiKey}"}
 app = Flask(__name__)
 
 df = pd.read_csv("data/2506.csv")
+tech_stacks_df = pd.read_csv("data/job_tech_stacks.csv")
 
 # GET이면 원본 데이터 그대로 보여준다.
 # POST면 form이면 직원 수, 시 값을 받아서 필터 함수 실행한다.
@@ -57,5 +58,12 @@ def table():
         selected_sido=selected_sido
     )
 
+@app.route("/tech_stacks")
+def tech_stacks_table():
+    table_html = tech_stacks_df.to_html(classes='table table-striped', index=False)
+    return render_template(
+        'tech_stacks.html',
+        table=table_html,
+    )
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=1241, debug=True)
