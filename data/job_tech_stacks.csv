@@ -1,31 +1,230 @@
-﻿직무,기술스택
-데이터 엔지니어,"Python, PostgreSQL, SQL, 데이터베이스, 데이터 분석, 사업 전략, 데이터 마트, GitHub, Git, 데이터웨어 하우징"
-임베디드 개발자,"Python, PostgreSQL, SQL, 데이터베이스, 데이터 분석, 사업 전략, 데이터 마트, GitHub, Git, 데이터웨어 하우징"
-자바 개발자,"Java, Git, JavaScript, Spring Boot, Oracle, Spring Framework, MySQL, CSS, HTML, SQL"
-.NET 개발자,"C / C++, Java, FastAPI, Docker, AWS, Nginx, Spring Boot, MySQL, Python, PyTorch"
-"시스템,네트워크 관리자","C / C++, Java, FastAPI, Docker, AWS, Nginx, Spring Boot, MySQL, Python, PyTorch"
-프론트엔드 개발자,"JavaScript, Git, React, TypeScript, HTML, CSS, Next.js, GitHub, PHP, Laravel"
-하드웨어 엔지니어,"JavaScript, Git, React, TypeScript, HTML, CSS, Next.js, GitHub, PHP, Laravel"
-DevOps / 시스템 관리자,
-"QA,테스트 엔지니어","JIRA, Slack, 테스트 케이스, QA 엔지니어링, iOS, Android, 테스트 계획, Confluence, SQL, JavaScript"
-안드로이드 개발자,"JavaScript, Git, React, TypeScript, HTML, CSS, Next.js, PHP, Laravel, React.js"
-iOS 개발자,"JavaScript, Git, React, TypeScript, HTML, CSS, Next.js, PHP, Laravel, React.js"
-"CTO,Chief Technology Officer",
-서버 개발자,"Java, Spring Boot, Python, AWS, Oracle, JavaScript, Git, MySQL, Docker, MongoDB"
-웹 개발자,"Java, JavaScript, HTML, CSS, Git, Oracle, Spring Framework, Spring Boot, TypeScript, React"
-프로덕트 매니저,"Java, JavaScript, HTML, CSS, Git, Oracle, Spring Framework, Spring Boot, TypeScript, React"
-개발 매니저,"Java, JavaScript, HTML, CSS, Git, Oracle, Spring Framework, Spring Boot, TypeScript, React"
-Node.js 개발자,"Java, JavaScript, HTML, CSS, Git, Oracle, Spring Framework, Spring Boot, TypeScript, React"
-"영상,음성 엔지니어","Java, JavaScript, HTML, CSS, Git, Oracle, Spring Framework, Spring Boot, TypeScript, React"
-파이썬 개발자,
-"C,C++ 개발자","Git, Java, AWS, JavaScript, MySQL, Spring Framework, TypeScript, MongoDB"
-웹 퍼블리셔,
-BI 엔지니어,
-데이터 사이언티스트,"Python, SQL, Git, NLP, Linux, Docker, Tableau, ML, Scikit-Learn, GitHub"
-빅데이터 엔지니어,"Python, SQL, Git, NLP, Linux, Docker, Tableau, ML, Scikit-Learn, GitHub"
-기술지원,"Python, SQL, Git, NLP, Linux, Docker, Tableau, ML, Scikit-Learn, GitHub"
-블록체인 플랫폼 엔지니어,"Python, SQL, Git, NLP, Linux, Docker, Tableau, ML, Scikit-Learn, GitHub"
-머신러닝 엔지니어,
-소프트웨어 엔지니어,"PostgreSQL, Oracle, Docker, GitHub, React, Java, Python, AWS, Node.js, Git"
-크로스플랫폼 앱 개발자,"PostgreSQL, Oracle, Docker, GitHub, React, Java, Python, AWS, Node.js, Git"
-DBA,"PostgreSQL, Oracle, Docker, GitHub, React, Java, Python, AWS, Node.js, Git"
+﻿직무,기술스택,비율
+데이터 엔지니어,Python,100.0
+데이터 엔지니어,SQL,100.0
+데이터 엔지니어,Git,100.0
+데이터 엔지니어,NLP,100.0
+데이터 엔지니어,Linux,100.0
+데이터 엔지니어,Docker,100.0
+데이터 엔지니어,Tableau,100.0
+데이터 엔지니어,ML,100.0
+데이터 엔지니어,Scikit-Learn,100.0
+데이터 엔지니어,GitHub,100.0
+임베디드 개발자,Python,100.0
+임베디드 개발자,PostgreSQL,100.0
+임베디드 개발자,SQL,50.0
+임베디드 개발자,데이터베이스,50.0
+임베디드 개발자,데이터 분석,50.0
+임베디드 개발자,사업 전략,50.0
+임베디드 개발자,데이터 마트,50.0
+임베디드 개발자,GitHub,50.0
+임베디드 개발자,Git,50.0
+임베디드 개발자,데이터웨어 하우징,50.0
+자바 개발자,Python,100.0
+자바 개발자,PostgreSQL,100.0
+자바 개발자,SQL,50.0
+자바 개발자,데이터베이스,50.0
+자바 개발자,데이터 분석,50.0
+자바 개발자,사업 전략,50.0
+자바 개발자,데이터 마트,50.0
+자바 개발자,GitHub,50.0
+자바 개발자,Git,50.0
+자바 개발자,데이터웨어 하우징,50.0
+.NET 개발자,Java,100.0
+.NET 개발자,Git,75.0
+.NET 개발자,JavaScript,75.0
+.NET 개발자,Spring Boot,50.0
+.NET 개발자,Oracle,50.0
+.NET 개발자,Spring Framework,50.0
+.NET 개발자,MySQL,50.0
+.NET 개발자,CSS,25.0
+.NET 개발자,HTML,25.0
+.NET 개발자,SQL,25.0
+"시스템,네트워크 관리자",Java,100.0
+"시스템,네트워크 관리자",Git,75.0
+"시스템,네트워크 관리자",JavaScript,75.0
+"시스템,네트워크 관리자",Spring Boot,50.0
+"시스템,네트워크 관리자",Oracle,50.0
+"시스템,네트워크 관리자",Spring Framework,50.0
+"시스템,네트워크 관리자",MySQL,50.0
+"시스템,네트워크 관리자",CSS,25.0
+"시스템,네트워크 관리자",HTML,25.0
+"시스템,네트워크 관리자",SQL,25.0
+프론트엔드 개발자,AWS,100.0
+프론트엔드 개발자,Kubernetes,100.0
+프론트엔드 개발자,Linux,100.0
+프론트엔드 개발자,Python,100.0
+하드웨어 엔지니어,AWS,100.0
+하드웨어 엔지니어,Kubernetes,100.0
+하드웨어 엔지니어,Linux,100.0
+하드웨어 엔지니어,Python,100.0
+DevOps / 시스템 관리자,Linux,100.0
+DevOps / 시스템 관리자,PostgreSQL,100.0
+DevOps / 시스템 관리자,Docker,100.0
+DevOps / 시스템 관리자,Kubernetes,50.0
+DevOps / 시스템 관리자,VDI,50.0
+DevOps / 시스템 관리자,Oracle,50.0
+DevOps / 시스템 관리자,Active Directory,50.0
+DevOps / 시스템 관리자,보안,50.0
+DevOps / 시스템 관리자,보안 정책,50.0
+DevOps / 시스템 관리자,보안 관리,50.0
+"QA,테스트 엔지니어",JIRA,100.0
+"QA,테스트 엔지니어",Slack,100.0
+"QA,테스트 엔지니어",테스트 케이스,100.0
+"QA,테스트 엔지니어",QA 엔지니어링,100.0
+"QA,테스트 엔지니어",iOS,100.0
+"QA,테스트 엔지니어",Android,100.0
+"QA,테스트 엔지니어",테스트 계획,100.0
+"QA,테스트 엔지니어",Confluence,100.0
+"QA,테스트 엔지니어",SQL,100.0
+"QA,테스트 엔지니어",JavaScript,100.0
+안드로이드 개발자,JIRA,100.0
+안드로이드 개발자,Slack,100.0
+안드로이드 개발자,테스트 케이스,100.0
+안드로이드 개발자,QA 엔지니어링,100.0
+안드로이드 개발자,iOS,100.0
+안드로이드 개발자,Android,100.0
+안드로이드 개발자,테스트 계획,100.0
+안드로이드 개발자,Confluence,100.0
+안드로이드 개발자,SQL,100.0
+안드로이드 개발자,JavaScript,100.0
+iOS 개발자,JavaScript,100.0
+iOS 개발자,Git,100.0
+iOS 개발자,React,100.0
+iOS 개발자,TypeScript,100.0
+iOS 개발자,HTML,100.0
+iOS 개발자,CSS,100.0
+iOS 개발자,Next.js,100.0
+iOS 개발자,PHP,100.0
+iOS 개발자,Laravel,100.0
+iOS 개발자,React.js,100.0
+"CTO,Chief Technology Officer",,
+서버 개발자,Java,100.0
+서버 개발자,Spring Boot,58.0
+서버 개발자,Python,58.0
+서버 개발자,AWS,58.0
+서버 개발자,Oracle,43.0
+서버 개발자,JavaScript,43.0
+서버 개발자,Git,43.0
+서버 개발자,MySQL,43.0
+서버 개발자,Docker,43.0
+서버 개발자,MongoDB,29.0
+웹 개발자,Java,100.0
+웹 개발자,Spring Boot,58.0
+웹 개발자,Python,58.0
+웹 개발자,AWS,58.0
+웹 개발자,Oracle,43.0
+웹 개발자,JavaScript,43.0
+웹 개발자,Git,43.0
+웹 개발자,MySQL,43.0
+웹 개발자,Docker,43.0
+웹 개발자,MongoDB,29.0
+프로덕트 매니저,Java,100.0
+프로덕트 매니저,Spring Boot,58.0
+프로덕트 매니저,Python,58.0
+프로덕트 매니저,AWS,58.0
+프로덕트 매니저,Oracle,43.0
+프로덕트 매니저,JavaScript,43.0
+프로덕트 매니저,Git,43.0
+프로덕트 매니저,MySQL,43.0
+프로덕트 매니저,Docker,43.0
+프로덕트 매니저,MongoDB,29.0
+개발 매니저,Git,100.0
+개발 매니저,Oracle,100.0
+개발 매니저,CSS,100.0
+개발 매니저,HTML,100.0
+개발 매니저,Java,100.0
+개발 매니저,JavaScript,100.0
+개발 매니저,SQL,100.0
+개발 매니저,Spring Framework,100.0
+Node.js 개발자,,
+"영상,음성 엔지니어",,
+파이썬 개발자,,
+"C,C++ 개발자",Git,100.0
+"C,C++ 개발자",Java,100.0
+"C,C++ 개발자",AWS,100.0
+"C,C++ 개발자",JavaScript,50.0
+"C,C++ 개발자",MySQL,50.0
+"C,C++ 개발자",Spring Framework,50.0
+"C,C++ 개발자",TypeScript,50.0
+"C,C++ 개발자",MongoDB,50.0
+"C,C++ 개발자",아마존 EC2,50.0
+"C,C++ 개발자",아마존 S3,50.0
+웹 퍼블리셔,Git,100.0
+웹 퍼블리셔,Java,100.0
+웹 퍼블리셔,AWS,100.0
+웹 퍼블리셔,JavaScript,50.0
+웹 퍼블리셔,MySQL,50.0
+웹 퍼블리셔,Spring Framework,50.0
+웹 퍼블리셔,TypeScript,50.0
+웹 퍼블리셔,MongoDB,50.0
+웹 퍼블리셔,아마존 EC2,50.0
+웹 퍼블리셔,아마존 S3,50.0
+BI 엔지니어,,
+데이터 사이언티스트,Python,100.0
+데이터 사이언티스트,SQL,100.0
+데이터 사이언티스트,Git,100.0
+데이터 사이언티스트,NLP,100.0
+데이터 사이언티스트,Linux,100.0
+데이터 사이언티스트,Docker,100.0
+데이터 사이언티스트,Tableau,100.0
+데이터 사이언티스트,ML,100.0
+데이터 사이언티스트,Scikit-Learn,100.0
+데이터 사이언티스트,GitHub,100.0
+빅데이터 엔지니어,Python,100.0
+빅데이터 엔지니어,SQL,100.0
+빅데이터 엔지니어,Git,100.0
+빅데이터 엔지니어,NLP,100.0
+빅데이터 엔지니어,Linux,100.0
+빅데이터 엔지니어,Docker,100.0
+빅데이터 엔지니어,Tableau,100.0
+빅데이터 엔지니어,ML,100.0
+빅데이터 엔지니어,Scikit-Learn,100.0
+빅데이터 엔지니어,GitHub,100.0
+기술지원,Python,100.0
+기술지원,SQL,100.0
+기술지원,Git,100.0
+기술지원,NLP,100.0
+기술지원,Linux,100.0
+기술지원,Docker,100.0
+기술지원,Tableau,100.0
+기술지원,ML,100.0
+기술지원,Scikit-Learn,100.0
+기술지원,GitHub,100.0
+블록체인 플랫폼 엔지니어,Linux,100.0
+블록체인 플랫폼 엔지니어,Kubernetes,100.0
+블록체인 플랫폼 엔지니어,VDI,100.0
+블록체인 플랫폼 엔지니어,PostgreSQL,100.0
+블록체인 플랫폼 엔지니어,Oracle,100.0
+블록체인 플랫폼 엔지니어,Active Directory,100.0
+블록체인 플랫폼 엔지니어,Docker,100.0
+머신러닝 엔지니어,Kubernetes,100.0
+머신러닝 엔지니어,Redis,100.0
+머신러닝 엔지니어,MongoDB,100.0
+머신러닝 엔지니어,AWS,100.0
+머신러닝 엔지니어,JavaScript,100.0
+머신러닝 엔지니어,FastAPI,100.0
+머신러닝 엔지니어,Nest.js,100.0
+머신러닝 엔지니어,Linux,100.0
+머신러닝 엔지니어,ML,100.0
+머신러닝 엔지니어,PostgreSQL,100.0
+소프트웨어 엔지니어,PostgreSQL,50.0
+소프트웨어 엔지니어,Oracle,50.0
+소프트웨어 엔지니어,Docker,50.0
+소프트웨어 엔지니어,GitHub,50.0
+소프트웨어 엔지니어,React,50.0
+소프트웨어 엔지니어,Java,50.0
+소프트웨어 엔지니어,Python,50.0
+소프트웨어 엔지니어,AWS,50.0
+소프트웨어 엔지니어,Node.js,50.0
+소프트웨어 엔지니어,Git,50.0
+크로스플랫폼 앱 개발자,PostgreSQL,50.0
+크로스플랫폼 앱 개발자,Oracle,50.0
+크로스플랫폼 앱 개발자,Docker,50.0
+크로스플랫폼 앱 개발자,GitHub,50.0
+크로스플랫폼 앱 개발자,React,50.0
+크로스플랫폼 앱 개발자,Java,50.0
+크로스플랫폼 앱 개발자,Python,50.0
+크로스플랫폼 앱 개발자,AWS,50.0
+크로스플랫폼 앱 개발자,Node.js,50.0
+크로스플랫폼 앱 개발자,Git,50.0
+DBA,,

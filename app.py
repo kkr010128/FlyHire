@@ -60,10 +60,14 @@ def table():
 
 @app.route("/tech_stacks")
 def tech_stacks_table():
-    table_html = tech_stacks_df.to_html(classes='table table-striped', index=False)
-    return render_template(
-        'tech_stacks.html',
-        table=table_html,
-    )
+    image_folder = os.path.join(app.static_folder, 'images')
+    images = os.listdir(image_folder)
+    images = [img for img in images if img.endswith('.png')]
+
+    # 이미지 파일명에서 직무명 추출 (파일명 형식: 직무_기술스택_그래프.png)
+    jobs_in_images = list(set(img.split('_')[0] for img in images))
+
+    return render_template('tech_stacks.html', jobs=jobs_in_images, images=images)
+    
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=1241, debug=True)
