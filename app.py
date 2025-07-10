@@ -68,6 +68,10 @@ def tech_stacks_table():
     jobs_in_images = list(set(img.split('_')[0] for img in images))
 
     return render_template('tech_stacks.html', jobs=jobs_in_images, images=images)
-    
+
+@app.route("/company_tech_stacks/")
+def company_tech_stacks():
+    return render_template('company_tech_stacks.html')
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=1241, debug=True)
