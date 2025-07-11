@@ -27,6 +27,7 @@ headers = {"Authorization": f"Infuser {apiKey}"}
 app = Flask(__name__)
 
 df = pd.read_csv("data/2506.csv")
+tech_stacks_df = pd.read_csv("data/job_tech_stacks.csv")
 
 # GET이면 원본 데이터 그대로 보여준다.
 # POST면 form이면 직원 수, 시 값을 받아서 필터 함수 실행한다.
@@ -56,6 +57,21 @@ def table():
         selected_employee=selected_employee,
         selected_sido=selected_sido
     )
+
+@app.route("/tech_stacks")
+def tech_stacks_table():
+    image_folder = os.path.join(app.static_folder, 'images')
+    images = os.listdir(image_folder)
+    images = [img for img in images if img.endswith('.png')]
+
+    # 이미지 파일명에서 직무명 추출 (파일명 형식: 직무_기술스택_그래프.png)
+    jobs_in_images = list(set(img.split('_')[0] for img in images))
+
+    return render_template('tech_stacks.html', jobs=jobs_in_images, images=images)
+
+@app.route("/company_tech_stacks/")
+def company_tech_stacks():
+    return render_template('company_tech_stacks.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=1241, debug=True)

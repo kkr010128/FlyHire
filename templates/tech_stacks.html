@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>직무별 기술스택 그래프</title>
+<style>
+  .image-container { margin-bottom: 30px; }
+</style>
+</head>
+<body>
+<h1>직무별 기술스택 그래프</h1>
+
+<!-- 1. 직무 선택 select -->
+<select id="jobSelect">
+    <option value="all">전체보기</option>
+    {% for job in jobs %}
+        <option value="{{ job }}">{{ job }}</option>
+    {% endfor %}
+</select>
+
+<!-- 2. 이미지들 -->
+<div id="images">
+    {% for img in images %}
+        <div class="image-container" data-job="{{ img.split('_')[0] }}">
+            <img src="{{ url_for('static', filename='images/' + img) }}" alt="{{ img }}" style="max-width: 800px; height: auto;" />
+        </div>
+    {% endfor %}
+</div>
+
+<script>
+const select = document.getElementById('jobSelect');
+const images = document.querySelectorAll('#images .image-container');
+
+select.addEventListener('change', function() {
+    const selectedJob = this.value;
+
+    images.forEach(div => {
+        if (selectedJob === 'all' || div.getAttribute('data-job') === selectedJob) {
+            div.style.display = 'block';
+        } else {
+            div.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
